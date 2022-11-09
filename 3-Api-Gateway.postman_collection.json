@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "a4233234-55d1-4c78-a5e6-9ea5c037d1fb",
+		"name": "3-Api-Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4553199"
+	},
+	"item": [
+		{
+			"name": "product-api-post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"TV\",\r\n    \"productDesc\" : \"Samsung TV 32 inches\",\r\n    \"productCode\" : \"TV-005\",\r\n    \"productPrice\": \"20000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/product-service/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"product-service",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product-api-get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"departmentName\" : \"Bank\",\r\n    \"departmentAddress\" : \"Mindspace, Hyd\",\r\n    \"departmentCode\" : \"Bank-005\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/product-service/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"product-service",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer-api-post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"srini\",\r\n    \"lastName\" : \"k\",\r\n    \"email\" : \"srinivas4in@gmail.com\",\r\n    \"productId\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/customer-service/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"customer-service",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer-api-get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"departmentName\" : \"Bank\",\r\n    \"departmentAddress\" : \"Mindspace, Hyd\",\r\n    \"departmentCode\" : \"Bank-005\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/customer-service/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"customer-service",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

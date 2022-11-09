@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "37a40f74-450c-480c-b3f1-f2731c14e9c3",
+		"name": "0-Product-Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4553199"
+	},
+	"item": [
+		{
+			"name": "Post-call",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"TV\",\r\n    \"productDesc\" : \"Samsung TV 32 inches\",\r\n    \"productCode\" : \"TV-005\",\r\n    \"productPrice\": \"20000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/product-service/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"product-service",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-call",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"departmentName\" : \"Bank\",\r\n    \"departmentAddress\" : \"Mindspace, Hyd\",\r\n    \"departmentCode\" : \"Bank-005\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/product-service/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"product-service",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

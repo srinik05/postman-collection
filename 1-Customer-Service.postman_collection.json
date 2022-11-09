@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "10639a83-fd7f-4478-90c1-951c98de1fab",
+		"name": "1-Customer-Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4553199"
+	},
+	"item": [
+		{
+			"name": "Post-call",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"srini\",\r\n    \"lastName\" : \"k\",\r\n    \"email\" : \"srinivas4in@gmail.com\",\r\n    \"productId\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9002/customer-service/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"customer-service",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-call",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"departmentName\" : \"Bank\",\r\n    \"departmentAddress\" : \"Mindspace, Hyd\",\r\n    \"departmentCode\" : \"Bank-005\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9002/customer-service/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"customer-service",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
